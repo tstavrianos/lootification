@@ -886,7 +886,7 @@ public class LeveledListInjector implements SUM {
     public void checkMastersSorted() throws Exception {
         ArrayList<ModListing> activeModListing = SPImporter.getActiveModList();
         for (ModListing mListing : activeModListing) {
-            Mod theMod = SPImporter.importMod(mListing, SPGlobal.pathToData);
+            Mod theMod = SPImporter.importMod(mListing, SPGlobal.pathToDataFixed);
             ArrayList<ModListing> masters = theMod.getMasters();
             ArrayList<ModListing> foundMasters = new ArrayList<>(0);
             for (ModListing m : activeModListing) {
